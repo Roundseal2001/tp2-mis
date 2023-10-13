@@ -1,0 +1,14 @@
+
+set xrange [0:10]
+set yrange [0:0.6]
+ 
+plot "courbe0.txt" using 1:2 with linespoints pointtype 1 linecolor rgb "pink" title "n=10 p=0.1"
+replot "courbe1.txt" using 1:2 with linespoints pointtype 2 linecolor rgb "green" title "n=10 p=0.2"
+replot "courbe2.txt" using 1:2 with linespoints pointtype 3 linecolor rgb "blue" title "n=10 p=0.3"
+replot "courbe3.txt" using 1:2 with linespoints pointtype 4 linecolor rgb "orange" title "n=10 p=0.4"
+replot "courbe4.txt" using 1:2 with linespoints pointtype 5 linecolor rgb "yellow" title "n=10 p=0.5"
+replot "courbe5.txt" using 1:2 with linespoints pointtype 6 linecolor rgb "blue" title "n=10 p=0.6"
+replot "courbe6.txt" using 1:2 with linespoints pointtype 7 linecolor rgb "red" title "n=10 p=0.7" 
+replot "courbe7.txt" using 1:2 with linespoints pointtype 8 linecolor rgb "black" title "n=10 p=0.8"
+replot "courbe8.txt" using 1:2 with linespoints pointtype 9 linecolor rgb "purple" title "n=10 p=0.9"
+
