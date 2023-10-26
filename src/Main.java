@@ -7,10 +7,13 @@ public class Main {
         Binomial bi = new Binomial();
         double p = 0.1;
         int t = 11;
-        for(int i = 0; i < t; i++){
-            double [][] courbe = bi.generate(10,p,t);
-            bi.writeDataFile("courbe"+i+".txt",courbe);
-            p = p + 0.1;
+        for(int i = 1; i < t; i++){
+            System.out.println(i);
+            if(i != 10) {
+                double[][] courbe = bi.generate(10, p, t);
+                bi.writeDataFile("courbe" + i + ".txt", courbe);
+                p = p + 0.1;
+            }
         }
     }
 }
